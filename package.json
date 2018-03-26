@@ -1,0 +1,23 @@
+{
+  "name": "tiger-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "style/index.scss",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url https://static.tigerbrokers.com/desktop/cdn/tiger-theme/",
+    "upload": "tiger-cdn dist/ tiger-theme",
+    "release": "npm run build && npm run upload"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tigerbrokers/cdn": "^1.1.0",
+    "bulma": "^0.6.2",
+    "jquery": "^3.3.1",
+    "parcel-bundler": "^1.6.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
