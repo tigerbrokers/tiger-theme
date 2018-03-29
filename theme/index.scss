@@ -1,0 +1,11 @@
+[theme=dark] {
+  @import './dark/index';
+}
+
+[theme=light] {
+  @import './light/index';
+}
+
+.page-nav .navbar-item.is-active {
+  border-bottom: 1px solid;
+}

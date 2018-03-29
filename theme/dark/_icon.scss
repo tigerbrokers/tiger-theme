@@ -1,0 +1,17 @@
+@keyframes anim-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  speak: none;
+  line-height: 1;
+
+  &.spinner {
+    animation: anim-rotate 2s infinite steps(24);
+  }
+}
